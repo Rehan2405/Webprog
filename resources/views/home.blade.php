@@ -8,9 +8,9 @@
 <?php
     echo "<br>";
 ?>
-<div class="title">
+<!-- <div class="title">
     <h1>Welcome To Rolling Dice</h1>
-</div>
+</div> -->
 <style>
 .button {
   margin: 0;
@@ -31,22 +31,32 @@
   
 }
 body {
-  background-color: lightblue
+  background-image: url('https://rare-gallery.com/uploads/posts/1051416-sunlight-lights-water-minimalism-reflection-blue-simple-dots-dice-light-cloud-weather-hand-atmospheric-phenomenon-computer-wallpaper-atmosphere-of-earth-macro-photograp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.card{
+  padding-left: ;
 }
 
 </style>
 
 
-<div class="container">
-   <div class="button">
-    <button type="button" class="btn btn-primary btn-lg"  onclick="myFunction()">Roll Me</button>
-    <br>
-<br>
-    <p id="butn"></p>
-
+<div class="card text-center bg-transparent">
+  <div class="card-header ">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><h1>Welcome To Rolling Dice</h1></h5>
+    <p class="card-text">Roll the dice with random 1-12 result!</p>
+    <button onclick="myFunction()" class="btn btn-success btn-lg "><h5>Let's Roll</h5></button>
+  </div>
+</div>
+    <h1 id="butn" class="text-center text-color-white"></h1>
     <script>
         function myFunction() {
-        document.getElementById("butn").innerHTML = Math.floor(Math.random() *6) + 1;
+        document.getElementById("butn").innerHTML = Math.floor(Math.random() *12) + 1;
         }
         
     </script>
